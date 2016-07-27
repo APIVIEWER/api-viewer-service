@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: 'Api-Viewer-Service'
+  data:
+    mongodb:
+      database: api-viewer-dev
+      host: 127.0.0.1     
+
+server:
+  port: 8767
+
+logging.file: ${spring.application.name}.log
+
+git:
+  auth:
+    username: 
+    password: 
+  organization: 
+
+cache:
+  ghRepository:
+    ttl: 60   
+    maxsize: 2000

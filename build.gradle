@@ -1,0 +1,33 @@
+
+allprojects {
+
+	group = 'org.app-viewer.web'
+	version = '1.0.0.0'
+
+	apply plugin: 'java'
+	apply plugin: 'checkstyle'
+	apply plugin: 'findbugs'
+	apply plugin: 'eclipse'
+	
+	sourceCompatibility = 1.8
+	targetCompatibility = 1.8
+	
+	repositories {
+		mavenCentral()
+		mavenLocal()
+	}
+	
+	dependencies {
+	
+	compile 'org.apache.commons:commons-lang3:3.4'
+	testCompile 'org.mockito:mockito-all:1.10.19'
+	testCompile 'junit:junit:4.2'
+		
+	}
+	
+	checkstyle {
+		toolVersion = '6.0'
+		configFile = rootProject.file('config/checkstyle.xml')
+		configProperties.checkstyleConfigDir = rootProject.file('config')
+	}
+}

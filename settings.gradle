@@ -1,0 +1,5 @@
+include 'api-viewer-standalone'
+include 'api-viewer-app'
+include 'api-viewer-system-tests'
+include 'api-viewer-common'
+include 'api-viewer-git'
