@@ -2,7 +2,7 @@
 allprojects {
 
 	group = 'org.app-viewer.web'
-	version = '1.0.0.0'
+	version = '1.0.1.0'
 
 	apply plugin: 'java'
 	apply plugin: 'checkstyle'
